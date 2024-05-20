@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html, #__nuxt {
+    height: 100%;
+}
+
+body {
+    font-family: $font;
+    padding: 0;
+    margin: 0;
+    background: $color-body-background;
+    color: $color-text-secondary;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    @include text-base-1;
+}
+
+input, button {
+    font-family: $font;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}

@@ -1,0 +1,4 @@
+<template>
+  <Swap />
+  <Alert />
+</template>

@@ -1,0 +1,137 @@
+$font: Manrope;
+
+// Colors
+$color-white: #ffffff;
+
+$color-grey: #F5F5F5;
+$color-grey-dark: #676767;
+$color-grey-ultra-dark: #939394;
+$color-grey-light: #E3E3E3;
+$color-grey-ultra-light: #B2B2B2;
+$color-grey-accent: #F1F1F1;
+
+$color-blue: #5551FF;
+$color-black: #1F1F1F;
+$color-black-light: #202022;
+
+$color-yellow: #FFEFD5;
+
+
+
+$color-body-background: $color-white;
+
+$color-border: $color-grey-light;
+$color-border-light: $color-grey-accent;
+$color-border-accent: $color-blue;
+
+$color-text-secondary: $color-grey-dark;
+$color-text-primary: $color-black;
+$color-text-invert: $color-grey;
+$color-text-tertiary: $color-grey-ultra-light;
+$color-text-info: $color-blue;
+
+$color-surface-main: $color-white;
+$color-surface-black: $color-black-light;
+$color-surface-gray: $color-grey;
+$color-surface-secondary-hover: $color-grey-accent;
+$color-surface-secondary-addon: $color-grey-light;
+$color-surface-warning: $color-yellow;
+
+
+// Sizes
+$size-0: 0px;
+$size-05: 2px;
+$size-1: 4px;
+$size-1-50: 6px;
+$size-2: 8px;
+$size-2-50: 10px;
+$size-3: 12px;
+$size-3-50: 14px;
+$size-4: 16px;
+$size-5: 20px;
+$size-6: 24px;
+$size-7: 28px;
+$size-8: 32px;
+$size-9: 36px;
+$size-10: 40px;
+$size-11: 44px;
+$size-12: 48px;
+$size-14: 56px;
+$size-16: 64px;
+$size-20: 80px;
+$size-24: 96px;
+$size-28: 112px;
+$size-32: 128px;
+
+// Typography
+@mixin create-font($fs, $lh) {
+    font-size: $fs;
+    line-height: $lh;
+}
+
+@mixin text-heading-1 {}
+@mixin text-heading-2 {}
+
+@mixin text-heading-3 {
+    @include create-font(24px, 28px);
+}
+
+@mixin text-heading-4 {
+    @include create-font(20px, 28px);
+}
+
+@mixin text-base-1 {
+    @include create-font(16px, 24px);
+}
+
+@mixin text-base-2 {
+    @include create-font(14px, 20px);
+}
+
+@mixin text-base-3 {
+    @include create-font(13px, 16px);
+}
+
+// Other
+
+@mixin ui-active-before {
+    content: '';
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: $color-border-accent;
+}
+
+// Border radius
+$radius-xl: $size-4;
+$radius-lg: $size-3;
+$radius-md: $size-2;
+$radius-sm: $size-1;
+$radius-full: 999px;
+
+// Border
+$color-border: $color-grey-light;
+
+// Padding
+$padding-4xl: $size-9;
+$padding-3xl: $size-8;
+$padding-xl: $size-5;
+$padding-lg: $size-4;
+$padding-2sm: $size-3;
+$padding-sm: $size-2-50;
+$padding-xs: $size-2;
+
+// Margin
+$margin-2xl: $size-6;
+$margin-xl: $size-5;
+$margin-lg: $size-4;
+$margin-2xs: $size-1;
+
+// Gap
+$gap-sm: $size-3;
+$gap-xs: $size-2;
+$gap-2xs: $size-1;
+$gap-3xs: $size-05;
