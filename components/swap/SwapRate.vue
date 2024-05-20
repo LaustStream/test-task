@@ -14,9 +14,9 @@
   })
 
   const swapStore = useSwapStore()
-  const { currencyCrypto, rateCalculation, isOutdatedRate } = storeToRefs(swapStore)
+  const { currencyCrypto, currencyFiat, rateCalculation, isOutdatedRate } = storeToRefs(swapStore)
   const formatedTotal = computed(() => formatAmount(rateCalculation.value.rate))
 
   const from = computed(() => `1 ${currencyCrypto.value.code}`)
-  const to = computed(() => `${formatedTotal.value} ${currencyCrypto.value.code}`)
+  const to = computed(() => `${formatedTotal.value} ${currencyFiat.value.code}`)
 </script>
